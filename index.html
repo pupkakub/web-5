@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Last Of Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Shadows+Into+Light&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="h1-cont"><h1>The Last Of Us</h1></div>
+    <div class="content">
+        <div class="menu">
+            <ul>
+                <li><a href="#about">About the game</a></li>
+                <li><a href="#plot">Plot</a></li>
+                <li><a href="#developers">Developers</a></li>
+                <li><a href="#awards">Awards</a></li>
+
+            </ul>
+            <img src="images/b4.png" id="butterfly">   
+        </div>
+    
+        <div class="main">
+            <div class="one">Base: 10</div> 
+            <div class="two">Height: 5</div> 
+            <div class="three"></div>
+
+            <div id="form-container">
+                <form id="number-form">
+                    <label for="numbers">Enter 10 numbers with spaces:</label><br>
+                    <input type="text" id="numbers" required pattern="^(\s*-?\d+(\.\d+)?\s*){10}$"><br>
+                    <button type="submit">Calculate!</button>
+                </form>
+                <div id="result" style="margin-top: 10px;"></div>
+            </div>
+
+            <div style="text-align: right;">
+                <label for="colorPicker">Choose text color:</label>
+                <input type="color" id="colorPicker">
+            </div>
+
+            <div id="blocks">
+                <p style="margin-bottom: 5px;">Double click on block to enter data</p>
+                <div class="block" data-block="1">Block 1</div>
+                <div class="block" data-block="2">Block 2</div>
+                <div class="block" data-block="3">Block 3</div>
+                <div class="block" data-block="4">Block 4</div>
+                <div class="block" data-block="5">Block 5</div>
+                <div class="block" data-block="6">Block 6</div>
+                <button id="save-button" style="margin-top: 10px;">Save list</button>   
+            </div>
+        </div>
+
+        <div class="other">
+            <div class="text">
+                An artwork that expands the boundaries of what is possible 
+                in video games and leaves players with thoughts 
+                and feelings that do not disappear long after the end of the game
+            </div>
+            <div class="giraffe"><img src="images/giraffe.jpg">
+            </div>
+        </div>
+        
+        <div class="h2-cont">
+             <h2>the best video game ever made</h2>
+        </div>
+
+    </div>
+
+        <script src="scripts/script1.js"></script>
+        <script src="scripts/script2.js"></script>
+        <script src="scripts/script3.js"></script>
+        <script src="scripts/script4.js"></script>
+        <script src="scripts/script5.js"></script>
+
+</body>
+</html>

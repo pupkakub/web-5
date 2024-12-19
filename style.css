@@ -1,0 +1,224 @@
+body
+{
+    font-family: "Anton";
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+.h1-cont
+{
+    height: 10vh;
+}
+h1
+{
+    color: white;
+    background-color: balack;
+    font-size: 45px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 2px 2px 5px rgba(46, 255, 151, 0.8);   
+    z-index: 1000;   
+}
+
+.numbered-block
+{
+    color:rgb(30, 255, 217);
+    overflow: auto;
+}
+.h2-cont
+{
+    height: 10vh;
+    position:absolute;
+    bottom:0;
+}
+h2
+{
+    color: white;
+    background-color: black;
+    text-shadow: 2px 2px 5px rgba(46, 255, 151, 0.8);
+    font-size: 35px;
+    display: grid;
+    grid-column: 2 / 4;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    text-wrap: nowrap;
+    width: 100vw;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.blocks
+{
+    margin-top: 20px;
+    font-size: large;
+}
+
+.content
+{   
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    grid-template-rows: auto 1fr auto; 
+    height: calc(100vh - 85px);
+    padding: 0;
+    gap: 0;
+    box-sizing: border-box;
+}
+.menu
+{
+    background: linear-gradient(rgb(255, 187, 240), rgb(53, 255, 221));
+    font-size: 35px;
+    padding: 10px;
+    border: solid black;
+    border-width: 5px;
+    border-top: 0;
+    overflow: hidden; 
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 100vh;
+    border-bottom: 0;
+    z-index: 40000;
+    box-sizing: border-box;
+
+    flex-shrink: 0;
+
+    ul li::marker
+    {
+        color: rgb(41, 36, 36);
+    }
+
+    a:link
+    {
+        color: rgb(98, 38, 104);
+    }
+    a:visited
+    {
+        color: rgb(33, 155, 155);
+    }
+    a:hover
+    {
+        color:rgb(95, 255, 228);
+    }
+    a:active
+    {
+        color:rgb(22, 5, 71);
+    }
+
+}
+
+#butterfly
+{
+    width: 60%;
+    margin-left: 50px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    padding: 10px;
+    background: linear-gradient(rgb(243, 155, 255), rgb(30, 255, 217));
+    height: calc(100vh - 20vh); 
+    color: rgb(0, 0, 0);
+    position: relative; 
+    text-align: right;
+    box-sizing: border-box;  
+    overflow: auto;   
+}
+
+.main img {
+    filter: grayscale(100%) sepia(100%) brightness(120%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.main img:hover {
+    filter: grayscale(0%) sepia(0%) brightness(100%);
+}
+.other {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: calc(100vh - 20vh); 
+    box-sizing: border-box;
+    
+}
+
+.text {
+    flex-grow: 500; 
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(53, 208, 255), rgb(255, 187, 240));
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid black;
+    border-width: 5px;
+    border-top: 0;
+    padding-top: 0;
+}
+
+.giraffe {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.giraffe img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+@media (max-width: 1300px) {
+    
+    .h1{
+        font-size: 45px;
+        height: 10%;
+        padding: 0 0 0 10%;
+        display: flex;
+        align-items: center;
+    }
+    h2 {
+        font-size: 28px; 
+        padding-left: 10vh;
+    }
+
+    .menu {
+        font-size: large;
+        padding: 5px;
+        width: 100%;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+    #butterfly
+    {
+        margin-left: 10px;
+    }
+    .other
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .text {
+        font-size:15px; 
+    }
+
+    .giraffe {
+        flex-grow: 1; 
+    }
+} 
